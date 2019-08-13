@@ -1,0 +1,24 @@
+{
+  "name": "pure-framework",
+  "version": "1.0.0",
+  "description": "framework for nodejs and typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/just-anohaker/pure-framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/just-anohaker/pure-framework/issues"
+  },
+  "homepage": "https://github.com/just-anohaker/pure-framework#readme",
+  "devDependencies": {
+    "typescript": "^3.5.3"
+  }
+}
