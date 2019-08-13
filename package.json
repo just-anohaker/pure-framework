@@ -2,10 +2,13 @@
   "name": "pure-framework",
   "version": "1.0.0",
   "description": "framework for nodejs and typescript",
-  "main": "./dist/index.js",
+  "main": "./dist/cmjs/index.js",
+  "module": "./dist/es6/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tsc"
+    "build:cmjs": "npx tsc -P tsconfig.json",
+    "build:es6": "npx tsc -P tsconfig.json --module ES2015 --outDir ./dist/es6",
+    "build": "npm run build:cmjs; npm run build:es6"
   },
   "repository": {
     "type": "git",
